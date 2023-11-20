@@ -18,14 +18,24 @@
 
       <form for="title">
         <fieldset>
-          <legend>Enter your information</legend>
-          <label aria-describedby="name-input">Name:</label>
+          <legend aria-label="Acessability Form">Enter your information</legend>
+
+          <label aria-describedby="name-input" for="name-Input">Name:</label>
           <input id="name-Input" type="text" name="name" />
-          <label aria-describedby="age-input">Age:</label>
-          <input id="age-Input" type="text" name="age" />
-          <label aria-describedby="color-input">Color you cannot see:</label>
+
+          <label aria-describedby="age-input" for="age-Input">Age:</label>
+          <input id="age-Input" type="number" name="age" />
+
+          <label aria-describedby="color-input" for="color-Input"
+            >Color you cannot see:</label
+          >
           <input id="color-Input" type="color" name="color" />
-          <textarea rows="7" placeholder="Leave us a message..."></textarea>
+
+          <textarea
+            rows="7"
+            placeholder="Leave us a message..."
+            aria-label="textbox to leave something you want to share"
+          ></textarea>
           <button type="submit">Submit</button>
         </fieldset>
       </form>
